@@ -139,8 +139,8 @@ django_heroku.settings(locals())
 elif os.environ.get('DEBUG') == "FALSE":
     DEBUG = False """
 
-"""import django_heroku
+import django_heroku
  
 if os.environ.get('I_AM_HEROKU') == 'yes':
     django_heroku.settings(locals())
-    DEBUG = False"""
+    DEBUG = False
