@@ -1,0 +1,1 @@
+This is a journaling app based on the tutorial from Python Crash Course by Eric Matthes. Deployed map can be found here: https://meb-learning-log.herokuapp.com/.

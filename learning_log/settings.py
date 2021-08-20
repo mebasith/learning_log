@@ -15,6 +15,7 @@ from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+# PWA_SERVICE_WORKER_PATH = os.path.join(BASE_DIR, 'static/js', 'serviceworker.js')
 
 
 # Quick-start development settings - unsuitable for production
@@ -45,8 +46,8 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'pwa', 
+    'django.contrib.staticfiles', 
+    'pwa'
 ]
 
 MIDDLEWARE = [
@@ -146,3 +147,14 @@ elif os.environ.get('DEBUG') == "FALSE":
 if os.environ.get('I_AM_HEROKU') == 'yes':
     django_heroku.settings(locals())
     DEBUG = False"""
+
+# PWA_APP_ICONS = [
+#     {
+#         'src': 'https://pics.freeicons.io/uploads/icons/png/13402457391579680325-512.png',
+#         'sizes': '192x192'
+#     },
+#      {
+#         'src': 'https://pics.freeicons.io/uploads/icons/png/13402457391579680325-512.png',
+#         'sizes': '512x512'
+#     },
+# ]
